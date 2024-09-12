@@ -1,5 +1,5 @@
-name: REPLACEREPONAME
-title: FIXME Course Title
+name: rha-rhcsa-challenge-excercises
+title: RHCSA Challenge Exercises
 version: 1
 nav:
 - modules/ROOT/nav.adoc

@@ -1,6 +1,6 @@
 site:
-  title: FIXME Course Title
-  start_page: REPLACEREPONAME::index.adoc
+  title: RHCSA Challenge Exercises
+  start_page: rha-rhcsa-challenge-excercises::index.adoc
 
 content:
   sources:
