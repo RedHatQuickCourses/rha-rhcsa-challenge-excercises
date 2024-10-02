@@ -17,3 +17,13 @@ Creating a New Challenge Exercise
 3. Once you've selected your category, go to that associated chapter section within the modules directory. Open that chapter and then open the pages section. From there, create a new "section#.adoc" file and write your exercise!
 
 4. Once written, update the nav.adoc file within the chatper structure to include your new section.
+
+# Testing Locally
+
+If you'd like to test your changes on your local machine before pushing to the main repository (recommended):
+1. Make sure you have npm installed on your laptop
+
+2. Ensure you are in the directory of the repository you've been working in to contribute to the project (more than likely the one you cloned to get started)
+3. Run npm install .
+4. Run npm run watch:adoc
+5. Run npm run serve in another terminal and browse the url displayed by this command for local rendering
