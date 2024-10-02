@@ -1,8 +1,19 @@
-# About this Training
+# About this Repository
 
-FIXME: Add short description about your training here.
+This repository houses all of the Challenge Exercises created to supplement the Red Hat Certified System Administrator study process and is primarily intended for Red Hat Academy students and instructors. 
 
-# Objectives
+# Contribution Guide: Gaining Access
 
-FIXME: Add here the list of objectives being covered in this training.
+Reach out to Kelly Barley (kbarley@redhat.com) if you are a Red Hat Academy instructor or student interested in contributing to the project!
 
+# Contribution Guide: Contributing
+
+Creating a New Challenge Exercise
+
+1. Clone the repository into your local workstation (do this in whichever manner you prefer).
+
+2. Determine where your new exercise best fits in the strcuture: Discrete Tasks (chapter1), Situational Awareness (chapter2), Productivity and Efficiencies (chapter3), or Comprehensive Scnearios (chatper4).
+
+3. Once you've selected your category, go to that associated chapter section within the modules directory. Open that chapter and then open the pages section. From there, create a new "section#.adoc" file and write your exercise!
+
+4. Once written, update the nav.adoc file within the chatper structure to include your new section.
