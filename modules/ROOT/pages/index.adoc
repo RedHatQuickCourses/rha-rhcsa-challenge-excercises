@@ -1,27 +1,18 @@
-= An Example Quick Course
+= RHCSA Challenge Exercises
 :navtitle: Home
 
 == Introduction
 
-Course Title: Course title FIXME
+RHCSA Challenge Exercises
 
-Description:
-Course description FIXME
+Purpose:
+This repository of exercises supplements the existing Red Hat System Administration course material and is designed to further sharpen students' skills. Exercises will have an estimated time to complete that will vary from minutes to hours, but all will somehow relate to an objective of the Red Hat Certified System Administrator exam (RHCSA).
 
-Duration: FIXME hours
+== How to Contribute
 
-== Objectives
+This is an open source project created through contributions from North America Red Hat Academy partners. If you would like to contribute, please reach out to Kelly Barley (kbarley@redhat.com) to learn more about the project and the guidelines for contributing.
 
-On completing this course, you should be able to:
-
-* Observable, measurable objective...
-* Observable, measurable objective...
-* Observable, measurable objective...
 
 == Prerequisites
 
-This course assumes that you have the following prior experience:
-
-* Course or experience...
-* Course or experience...
-* Course or experience...
+Each exercise will have a different set of prerequisites depending on how advanced the challenge is. If a student has taken both Red Hat System Administration I and II, they should be equipped to attempt every exercise.
