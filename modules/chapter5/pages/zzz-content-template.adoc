@@ -1,0 +1,42 @@
+ifndef::backend-docbook5,backend-docbook45[:imagesdir: ../../..]
+[id='shortsectionname-lecture']
+= Lecture Section Sample Title
+
+== Objectives
+
+// Enumerate your objectives as bullets without a lead-in sentence.
+
+* Always use bullets, even if there is only one objective.
+* Don't change the title.
+
+
+== Section 1 Heading
+
+Section 1 headings are the first heading levels after chapter headings.
+
+This line includes a link according to the https://jenkins.prod.nextcle.com/userContent/curriculum-guidelines/tagging/references/urls.html[AsciiDoc Guide].
+
+This uses the same URL but wraps it in backticks `https://jenkins.prod.nextcle.com/userContent/curriculum-guidelines/tagging/references/urls.html`.
+This is useful if you have trouble with Vale or `aspell` tripping over URL content.
+
+== Section 1 Heading
+
+You can use two Section 1 headings in succession.
+You do not need to include a Section 2 heading.
+
+=== Section 2 Heading
+
+Section 2 headings _always_ follow a combination of a Section 1 heading and some intervening text.
+Do not proceed directly from a Section 1 heading to a Section 2 heading.
+
+
+You can use multiple Section 2 headings in succession.
+There is no such thing as a Section 3 heading.
+
+== {nbsp}
+
+[role="References"]
+[NOTE]
+====
+For more information, refer to the _Automated Installation_ chapter in the _Red{nbsp}Hat Enterprise Linux{nbsp}7 Installation Guide_ at https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/installation_guide/index#sect-automated-installation
+====

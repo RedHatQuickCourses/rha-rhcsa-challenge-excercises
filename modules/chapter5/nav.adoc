@@ -1,4 +1,4 @@
 * xref:index.adoc[]
-** xref:section1.adoc[]
-** xref:section2.adoc[]
-** xref:section3.adoc[]
+** xref:zzz-content-template.adoc[]
+** xref:zzz-exercise-template.adoc[]
+** xref:zzz-lab-template.adoc[]
