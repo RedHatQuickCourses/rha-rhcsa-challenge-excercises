@@ -79,4 +79,3 @@ If your goal is simulate a testing/certification time pressures, have students s
 Another strategy I use is to have students submit their commmand history with timestamps to help identify where students get stuck (e.g., minutes between commands). At the beginning of each lab, have them run *"export HISTTIMEFORMAT="%F %T "* 
 
 TIP: There is a space between %F and %T and after %T before the closing ".
-Add this to the /etc/profile.d
