@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Lab Environment :: RHCSA Challenge Exercises</title>
+    <title>Efficiently create, copy, and move files :: RHCSA Challenge Exercises</title>
+    <link rel="prev" href="section3.html">
+    <link rel="next" href="../chapter4/index.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -45,7 +47,7 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="index.html">Lab Environment</a>
+    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
   </li>
 </ul>
   </li>
@@ -91,19 +93,19 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../chapter3/index.html">Productivity and Efficiencies</a>
+    <a class="nav-link" href="index.html">Productivity and Efficiencies</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/section1.html">Productivity Challenge 1 Placeholder</a>
+    <a class="nav-link" href="section1.html">Productivity Challenge 1 Placeholder</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/section2.html">Productivity Challenge 2 Placeholder</a>
+    <a class="nav-link" href="section2.html">Productivity Challenge 2 Placeholder</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/section3.html">Productivity Challenge 3 Placeholder</a>
+    <a class="nav-link" href="section3.html">Productivity Challenge 3 Placeholder</a>
   </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../chapter3/section4_draft.html">Efficiently create, copy, and move files</a>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="section4_draft.html">Efficiently create, copy, and move files</a>
   </li>
 </ul>
   </li>
@@ -183,7 +185,8 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">RHCSA Challenge Exercises</a></li>
-    <li><a href="index-lab-role.html">Lab Environment</a></li>
+    <li><a href="index.html">Productivity and Efficiencies</a></li>
+    <li><a href="section4_draft.html">Efficiently create, copy, and move files</a></li>
   </ul>
 </nav>
 </div>
@@ -192,10 +195,191 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Lab Environment</h1>
-<div class="paragraph">
-<p>FIXME: Instructions for accessing the lab environment on the ROLE platform, for this hands-on based training.</p>
+<h1 class="page">Efficiently create, copy, and move files</h1>
+<div class="sect1">
+<h2 id="_rhsca_objectives"><a class="anchor" href="#_rhsca_objectives"></a>RHSCA Objectives:</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create, copy, move, and remove files and directories.</p>
+</li>
+<li>
+<p>Efficiently run commands that affect many files by using pattern matching features of the Bash shell.</p>
+</li>
+</ol>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exercise_types"><a class="anchor" href="#_exercise_types"></a>Exercise Type(s):</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Discrete tasks</p>
+</li>
+<li>
+<p>Productivity and Efficiency</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_estimated_time_to_complete"><a class="anchor" href="#_estimated_time_to_complete"></a>Estimated Time to Complete:</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>*15* minutes</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Practice creating and moving files around the filesystem using commands that improve your productivity and efficiency</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_outcomes"><a class="anchor" href="#_outcomes"></a>Outcomes</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Use absolute and relative paths to create directories in different locations in the files system.</p>
+</li>
+<li>
+<p>Make a directory, different from your present directory, your present working directory.</p>
+</li>
+<li>
+<p>create several empty files using brace expansion.</p>
+</li>
+<li>
+<p>identify files that match specific patterns using *, ? and/or [ ] wildcards and move them elsewhere in the filesystem.</p>
+</li>
+<li>
+<p>copy files that match specific patterns using *, ? and/or [ ] wildcards and move them elsewhere in the filesystem.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1 Checklist">
+<h2 id="_instructions"><a class="anchor" href="#_instructions"></a>Instructions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>1) Login to workstation and determine your present working directory</p>
+</div>
+<div class="paragraph">
+<p>2) Change your present working directory to <strong>Public</strong> in your home directory.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+If the directory <strong>Public</strong> does not exist&#8230;&#8203;.what should you do?
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>3) Verify you are in the correct directory</p>
+</div>
+<div class="paragraph">
+<p>4) Use a single command that correctly uses brace expansion to create the following empty files:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>file1
+file2
+file3
+Pale1
+Pale2
+Pale3
+pail1
+pail2
+pail3</pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+You can use multiple brace expansions in the same command to create filenames.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>5) Create a subdirectory called <strong>Surprise</strong> in <strong>Public</strong> using a relative path.</p>
+</div>
+<div class="paragraph">
+<p>6) Use <strong>*</strong>, <strong>?</strong> and/or <strong>[ ]</strong> wildcards to copy all files that have an <strong>"e"</strong> in their name to the directory <strong>Surprise</strong></p>
+</div>
+<div class="paragraph">
+<p>7) Use <strong>*</strong>, <strong>?</strong> and/or <strong>[ ]</strong> wildcards to move all files that have a 1 or a 3 in their name to the <strong>~/Documents/NumberedFiles</strong> Directory</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+If that directory does not exist&#8230;&#8203;.what should you do?
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_finish"><a class="anchor" href="#_finish"></a>Finish</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This concludes the challenge exercise.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_suggestions_for_evaluation"><a class="anchor" href="#_suggestions_for_evaluation"></a>Suggestions for evaluation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If your goal is simulate a testing/certification time pressures, have students submit screenshots of the <strong>date</strong> command output at the start and finish of the exercise.</p>
+</div>
+<div class="paragraph">
+<p>Another strategy I use is to have students submit their commmand history with timestamps to help identify where students get stuck (e.g., minutes between commands). At the beginning of each lab, have them run <strong>"export HISTTIMEFORMAT="%F %T "</strong></p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+There is a space between %F and %T and after %T before the closing ".
+Add this to the /etc/profile.d
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="section3.html">Productivity Challenge 3 Placeholder</a></span>
+  <span class="next"><a href="../chapter4/index.html">Comprehensive Scenarios</a></span>
+</nav>
 </article>
   </div>
 </main>
